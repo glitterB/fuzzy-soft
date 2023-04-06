@@ -15,12 +15,12 @@ A set is an `unordered` collection of different elements i.e. is a collectoin of
 >&nbsp;&nbsp;&nbsp;&nbsp;Set of all months in a year
 
 Mathematically, set can be represented as follows,  
-$A = \left\{a,e,i,o,u \right\}$
+$$A = \{~ a,e,i,o,u ~ \}$$
 
 # 2. What is Fuzzy set?  
 A Fuzzy set is collection of ordered pairs.  
 Mathematically, Fuzzy set is represented as,  
-$$A = \left\{x,~\mu_{S}\left(x\right) \right\}$$  
+$$A = \left{x,\mu_{S}\left(x\right) \right}$$  
 
 
 # 3. Fuzzy Operations  
