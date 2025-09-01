@@ -40,44 +40,54 @@ Where $X$ is an Universal set and $\mu_{S}$ is membership function value.
 Let A and B be tow fuzzy sets defined on universal set X, then different Fuzzy set operations can be defined as follows,
 
 1. Subset:-  
+
 $$A\subset B \iff \mu_{A}(x)<\mu_{B}(x)$$
 
 2. Equal:-  
+
 $$A= B \iff \mu_{A}(x)=\mu_{B}(x)$$
 
 3. Complement:-  
+
 $$\bar A  = \{ x, 1-\mu_{A}(x)\}$$
 
 4. Union:-  
+
 $$A\cup B = \{ x, max[\mu_{A}(x),\mu_{B}(x)] \}$$
 
 5. Intersection:-  
+
 $$A\cup B = \{ x, min[\mu_{A}(x),\mu_{B}(x)] \}$$
 
 6. Algebric Product:-  
+
 $$A\cdot B = \{ x,\mu_{A}(x)\cdot\mu_{B}(x) \}$$
 
 7. Multiplication by crisp number:-  
+
 $$c\cdot A = \{ x, c\cdot\mu_{A}(x)\}$$
 
 8. p<sup>th</sup> power:-  
+
 $$A^p = \{ x, \mu_{A}(x)^p\}$$
 
 9. Algebraic sum:-  
+
 $$A+B = \{ x,\mu_{A}(x)+\mu_{B}(x) \}$$
 
 10. Algebraic difference:-  
+
 $$A-B = \{ x,\mu_{A}(x)-\mu_{B}(x) \}$$
 
 11. Bounded sum:-  
-$$A\oplus B = \{ x,\mu_{A}(x)\oplus \mu_{B}(x) \}$$
 
+$$A\oplus B = \{ x,\mu_{A}(x)\oplus \mu_{B}(x) \}$$
 
 $$\mu_{A}(x)\oplus \mu_{B}(x) =min[1,\mu_{A}(x)+\mu_{B}(x)]$$
 
 12. Bounded difference:-  
-$$A\ominus B = \{ x,\mu_{A \ominus B}(x)\}$$
 
+$$A\ominus B = \{ x,\mu_{A \ominus B}(x)\}$$
 
 $$\\mu_{A \ominus B}(x) =max[0,\mu_{A}(x)+\mu_{B}(x)-1]$$
 
