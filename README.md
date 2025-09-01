@@ -71,10 +71,14 @@ $$A-B = \{ x,\mu_{A}(x)-\mu_{B}(x) \}$$
 
 11. Bounded sum:-  
 $$A\oplus B = \{ x,\mu_{A}(x)\oplus \mu_{B}(x) \}$$
+
+
 $$\mu_{A}(x)\oplus \mu_{B}(x) =min[1,\mu_{A}(x)+\mu_{B}(x)]$$
 
 12. Bounded difference:-  
 $$A\ominus B = \{ x,\mu_{A \ominus B}(x)\}$$
+
+
 $$\\mu_{A \ominus B}(x) =max[0,\mu_{A}(x)+\mu_{B}(x)-1]$$
 
 
