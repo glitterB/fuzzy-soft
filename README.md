@@ -21,7 +21,8 @@ A classical set is an **unordered collection** of distinct elements—essentiall
 - Set of all positive integers  
 - Set of all months in a year
 
-Mathematically, a set can be represented as:
+Mathematically, a set can be represented as:   
+
 $$A = \{~ a,e,i,o,u ~ \}$$
 
 # 2. What is a Fuzzy set?
