@@ -41,6 +41,14 @@ class FuzzySet():
 
                     
     #Fuzzy Operations
+    def subset(self, other):
+        """Returns True if a fuzzy set is subset of another."""
+        if not isinstance(other, FuzzySet):
+            return NotImplemented
+        if self._elements.keys() != other._elements.keys():
+            return False
+        return all(self._elements[k] < other._elements[k] for k in self._elements)
+
     def __eq__(self, other):
         """Returns True if two fuzzy sets have exactly the same elements and membership values."""
         if not isinstance(other, FuzzySet):
@@ -131,6 +139,27 @@ class FuzzySet():
         for k, v in self._elements.items():
             result[k] = v ** p
         return result
+    
+    def bdsum (self, other):
+        """Returns the bounded sum of two fuzzy sets as a new FuzzySet."""
+        result = FuzzySet()
+        keys = set(self._elements.keys()) | set(other._elements.keys())
+        for k in keys:
+            m1 = self._elements.get(k, 0)
+            m2 = other._elements.get(k, 0)
+            result[k] = min(1,m1+m2)
+        return result
+    
+    def bddiff(self, other):
+        """Returns the bounded difference of two fuzzy sets as a new FuzzySet."""
+        result = FuzzySet()
+        keys = set(self._elements.keys()) | set(other._elements.keys())
+        for k in keys:
+            m1 = self._elements.get(k, 0)
+            m2 = other._elements.get(k, 0)
+            result[k] = max(0,m1+m2-1)
+        return result
+        
 #----------------------XoX----------------------
         
 if __name__ == "__main__":
